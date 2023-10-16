@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portofolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/images/Untitled.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Razvan Julea</span></h1>
+          <h2>
+            <br />A technology enthusiast with experience in software
+            development <br />and a desire to continuaslly learn and contribute
+            to your development team.
+            <br>
+            <br>I'm so excited that you are here, hope you enjoy.
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <br />I'm a dedicated, ambitious and hardworking person who isina
+              constant state of learning new skills and technologies.Ipride
+              myself on being dependable, proactive and ateamplayer. I'm
+              dedicated to advancing my career and becoming a reliable Software
+              Developer that will beavaluable asset to any team.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programing:</span><br />Java, Spring, PostgreSQL,
+                  Liquibase, Angular, Maven, REST, HTML, CSS, JavaScript, Git
+                </li>
+                <li>
+                  <span>Technical:</span><br />Visual Studio Code, Eclipse,
+                  Postman, pgAdmin, Jira, Microsoft Office, SolidWorks, Catia V5
+                </li>
+                <li>
+                  <span>Personal:</span><br />Open-mindedness, Self control,
+                  Nice person, Continuous learning
+                </li>
+                <li>
+                  <span>Comunication:</span><br />Good listener, Efficient
+                  communication, Public speaking
+                </li>
+                <li>
+                  <span>Work:</span><br />Hardworking, Ambitious, Dedicated,
+                  Analytical/Critical thinking, Teamwork
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>April 2022 - September 2023</span><br />Internship -
+                  Continental Automotive | Timisoara, Romania
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>April 2023 - July 2023</span><br />Software Developer -
+                  Java M3, Savnet Training Center
+                </li>
+                <li>
+                  <span>January 2023 - March 2023</span><br />Software Developer
+                  - Java M2, Savent Training Center
+                </li>
+                <li>
+                  <span>October 2022 - December 2022</span><br />Software
+                  Developer - Java M1, Savent Training Center
+                </li>
+                <li>
+                  <span>September 2021 - July 2023</span><br />Master's degree -
+                  Advance Techniques in Road Transportation, Politehnica
+                  University of Timisoara, Romania
+                </li>
+                <li>
+                  <span>September 2017 - July 2021</span><br />Bachelor's degree
+                  - AR (Road Vehicles), Politehnica University of Timisoara,
+                  Romania
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portofolio -->
+    <div id="portofolio">
+      <div class="container">
+        <h1 class="sub-title">My projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="/images/game-store-icon-from-video-games-collection-vector-38128016.jpg"
+            />
+            <div class="layer">
+              <h3>GameStore App (Backend/Server)</h3>
+              <p>
+                Java API mirroring Steam's functionalities for digital game
+                distribution and user engagement. The purpose of this project was to show the dedication and desire to enter this field
+              </p>
+              <a href="https://github.com/JuleaRazvan/Gamestore" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="/images/Werk Meniu.jpg"
+            />
+            <div class="layer">
+              <h3> Restaurant Menu(Front-End)</h3>
+              <p>I'm currently working on this restaurant menu.</p>
+              <a href="" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="/images/Black_colour.jpg"
+            />
+            <div class="layer1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> julearazvan@yahoo.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +40771544611</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/razvan-julea-28a77021b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/JuleaRazvan" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.facebook.com/razvan.julea/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <a href="images/Julea Razvan CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2023. All rights reserved.</p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
